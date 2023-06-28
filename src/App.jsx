@@ -7,11 +7,11 @@ import './App.css'
 
 function App() {
 
-  const rand = Math.floor(Math.random() * 16);
-  const randBackGround = Math.floor(Math.random() * 4);
+  //const rand = Math.floor(Math.random() * 16);
+  //const randBackGround = Math.floor(Math.random() * 4);
 
-  console.log(rand)
-  console.log(randBackGround)
+  //console.log(rand)
+  //console.log(randBackGround)
 
   const colors = ["/fondo1.jpg", "/fondo2.jpg", "/fondo3.jpg", "/fondo4.jpg"]
 
@@ -19,15 +19,15 @@ function App() {
 
 
   const changeFortune = () => {
-    setIndex(rand)
+    setIndex(Math.floor(Math.random() * 15))
   }
 
-  document.body.style = `background-image:url(${colors[randBackGround]})`
+  document.body.style = `background-image:url(${colors[Math.floor(Math.random() * 4)]})`
 
   return (
     <>
-      <Galleta  data={phrases[index].phrase}/>
-      <Autor data={phrases[index].author}/>
+      <Galleta  data={phrases[index]}/>
+      <Autor data={phrases[index]}/>
 
       <button className='btn-fortuna' onClick={changeFortune}>Ver otro</button>
     </>

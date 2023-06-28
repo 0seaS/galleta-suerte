@@ -5,7 +5,7 @@ const Autor = ({data}) => {
     return(
         <>
             <div className="autor">
-                <p>{data}</p>
+                <p>{data?.author}</p>
             </div>
         </>
     )

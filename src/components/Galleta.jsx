@@ -10,7 +10,7 @@ const Galleta = ({data}) => {
             </div>
             <div className="fortune-content">
                 <p>
-                    {data}
+                    {data?.phrase}
                 </p>
             </div>
             
