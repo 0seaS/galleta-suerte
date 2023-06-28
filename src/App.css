@@ -1,0 +1,38 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aqua;
+}
+
+.container {
+  justify-content: center;
+}
+
+.title-content{
+ text-align: center;
+ color: white;
+ 
+ padding: 2rem 0 ;
+ font-size: 10px;
+ width: 200px;
+ margin: auto;
+}
+
+.fortune-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+.btn-fortuna {
+  color: blue;
+  background-color: black;
+  border-radius: 20%;
+  padding: 5px 30px;
+
+}
