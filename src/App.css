@@ -3,36 +3,54 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
+  background-image: url("/fondo1.jpg");
+  background-size: cover;
+  background-position: center;
   background-color: aqua;
+  justify-content: center;
+  text-align: center;
 }
 
 .container {
   justify-content: center;
+  text-align: center;
+  padding: 0px 50px;
 }
 
 .title-content{
  text-align: center;
+ text-shadow: black 0.1em 0.1em 0.2em;
  color: white;
- 
+ margin: 0px auto;
  padding: 2rem 0 ;
  font-size: 10px;
- width: 200px;
+ max-width: 200px;
+ min-width: 50px;
  margin: auto;
 }
 
 .fortune-content {
   text-align: center;
+  color: gray;
   padding: 2rem;
+  margin: 0px auto;
   background-color: white;
+  height: 100px;
+  min-width: 200px;
+  max-width: 500px;
+  border-radius: 100px 50px;
 }
 
 .btn-fortuna {
-  color: blue;
-  background-color: black;
-  border-radius: 20%;
+  color: white;
+  background-color: rgb(96, 205, 233);
+  border-radius: 10px;
   padding: 5px 30px;
-
+  margin: 25px auto;
+  
 }
+
